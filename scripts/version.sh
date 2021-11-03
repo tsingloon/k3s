@@ -1,10 +1,6 @@
 #!/bin/bash
 
 TREE_STATE=clean
-if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
-    DIRTY="-dirty"
-    TREE_STATE=dirty
-fi
 
 COMMIT=$(git log -n3 --pretty=format:"%H %ae" | grep -v ' drone@localhost$' | cut -f1 -d\  | head -1)
 if [ -z "${COMMIT}" ]; then

@@ -39,7 +39,7 @@ type Controller struct {
 }
 
 const (
-	image = "rancher/klipper-helm:v0.1.5"
+	image = "registry.baidubce.com/kube-test/klipper-helm:v0.1.5"
 	label = "helmcharts.helm.cattle.io/chart"
 	name  = "helm-controller"
 )
