@@ -39,7 +39,7 @@ spec:
         emptyDir: {}
       containers:
       - name: metrics-server
-        image: rancher/metrics-server:v0.3.6
+        image: registry.baidubce.com/kube-test/metrics-server:v0.3.6
         volumeMounts:
         - name: tmp-dir
           mountPath: /tmp
