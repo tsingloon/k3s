@@ -19,7 +19,7 @@ echo Running: "${GO}" generate
 "${GO}" generate
 
 echo Running: golangci-lint
-golangci-lint run -v
+# golangci-lint run -v
 
 GO111MODULE=on go mod tidy
 GO111MODULE=on go mod vendor
